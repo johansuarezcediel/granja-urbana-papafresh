@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Open Sans, sans-serif';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*header */
+
+header{
+    width: 100%;
+    height: 500px;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345c4, #232526a4), url(imagenes/sembrar.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;    
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: honeydew;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 30px;
+
+}
+nav > a:hover{
+text-decoration: underline;
+
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: honeydew;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: honeydew;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+
+/*acerca de nosotros*/
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobre-nosotros{
+    width: 25%;
+}
+
+.contenido-sobre-nosotros h3{
+    margin-bottom: 15px;
+    
+}
+
+.contenido-sobre-nosotros h3 span{
+    background: rgb(10, 10, 10);
+    color: ivory;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: black;
+    padding: 5px;
+    
+}
+
+.contenido-sobre-nosotros{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*galeria*/
+
+.portafolio{
+    background: gainsboro;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /*transform: scale(0);*/
+    background: forestgreen;
+    transition: transform .10s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: rgb(0, 0, 0);
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}
+
+/*clientes*/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: rgb(28, 146, 28);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: black;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border:3px rgba(117, 2, 2, 0);
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: blanchedalmond;
+}
+
+.card .card > .contenido-texto-card{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*nuestros productos*/
+
+.nuestros-productos{
+    background: blanchedalmond;
+    padding-bottom: 30px;
+
+}
+
+.productos-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nuestros-ind{
+    width: 28%;
+    text-align: center;
+
+}
+
+.nuestros-ind img{
+    width: 90%;
+}
+
+.nuestros-ind h3{
+    margin: 10px o;
+}
+
+.nuestros-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/*footer*/
+
+footer{
+    background: grey;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+.content-foo{
+    text-align: center;
+
+}
+.content-foo h4{
+    color: honeydew;
+    border-bottom: 3px solid green;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color:honeydew;
+}
+
+.titulo-final{
+text-align: center;
+font-size: 24px;
+margin:20px;
+
+}
